@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/> 
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>  -->
+
+
+<style type="text/css">
+.nav-h3 {
+	color: #ffffff;
+}
+
+.btn-primary{
+border-radius: 0;
+background-color: green;
+}
+.btn-primary:hover{
+border-radius: 0;
+background-color: green;
+}
+</style>
+
+</head>
+<body>
+
+
+	<!-- <script> 
+  $('#dateOfBirth').datepicker({ 
+    uiLibrary: 'bootstrap4', 
+    format: 'dd/mm/yyyy' 
+  }); 
+</script>  -->
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<h3 class="nav-h3">Payroll</h3>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#items">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div id="items" class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Goals</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<br>
+		<h2>New Employee</h2>
+		<form class="was-validated">
+
+			<div class="form-row">
+				<div class="col-sm-4">
+					<fieldset class="form-group">
+						<label for="first_name">First Name</label> <input type="text"
+							id="first_name" name="first_name" class="form-control">
+					</fieldset>
+				</div>
+				<div class="col-sm-4">
+					<fieldset class="form-group">
+						<label for="middle_name">Middle Name</label> <input type="text"
+							id="middle_name" name="middle_name" class="form-control">
+					</fieldset>
+				</div>
+				<div class="col-sm-4">
+					<fieldset class="form-group">
+						<label for="last_name">Last Name</label> <input type="text"
+							id="last_name" name="last_name" class="form-control">
+					</fieldset>
+				</div>
+			</div>
+
+			<div class="form-row">
+				<div class="col-sm-6">
+					<fieldset class="form-group">
+						<label for="address_line1">Address Line 1</label> <input
+							type="text" id="address_line1" name="address_line1"
+							class="form-control">
+					</fieldset>
+				</div>
+				<div class="col-sm-6">
+					<fieldset class="form-group">
+						<label for="address_line2">Address Line 2</label> <input
+							type="text" id="address_line2" name="address_line2"
+							class="form-control">
+					</fieldset>
+				</div>
+			</div>
+
+
+			<div class="form-row">
+				<div class="col-sm-4">
+					<fieldset class="form-group">
+						<label for="email">Email</label> <input type="email" id="email"
+							name="email" class="form-control">
+					</fieldset>
+				</div>
+				<div class="col-sm-4">
+					<fieldset class="form-group">
+						<label for="password">Password</label> <input type="password"
+							id="password" name="password" class="form-control">
+					</fieldset>
+				</div>
+				<div class="col-sm-4">
+					<fieldset class="form-group">
+						<label for="confirm_password">Confirm Password</label> <input
+							type="password" id="confirm_password" name="confirm_password"
+							class="form-control">
+					</fieldset>
+				</div>
+			</div>
+
+
+			<div class="form-row">
+				<div class="col-sm-3">
+					<fieldset class="form-group">
+						<label for="department">Department</label> <select id="department"
+							name="department" class="form-control"></select>
+					</fieldset>
+				</div>
+				<div class="col-sm-3">
+					<fieldset class="form-group">
+						<label for="dateOfBirth">Date of Birth</label> <input type="date"
+							id="dateOfBirth" name="dateOfBirth" class="form-control">
+					</fieldset>
+				</div>
+				<div class="col-sm-3">
+					<fieldset class="form-group">
+						<label for="gender">Gender</label><br>
+						<label class="radio-inline"><input
+							type="radio" id="gender_male" name="gender_male">Male</label> <label class="radio-inline"><input
+							type="radio" id="gender_female" name="gender_female">Female</label>
+					</fieldset>
+				</div>
+				<div class="col-sm-3">
+					<fieldset class="form-group">
+						<label for="chk_permanent">Permanent</label> <br>
+						<label class="checkbox-inline" id="chk_permanent" class="chk_permanent"><input type="checkbox"></label>
+					</fieldset>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Save</button>
+		</form>
+		
+	</div>
+</body>
+</html>
