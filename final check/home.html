@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--customized css-->
+    
+
+        <link rel="stylesheet" href="moviecruiser.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--for adding home icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+  <style>
+    .message{
+      display:none;
+      border-radius:.25em;
+      background-color: bisque;
+    }
+   
+    h2{
+      color: #5a4e3e;
+    }
+  </style>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#014d4e;">
+        <div class="container-fluid navConatiner">
+            <a class="navbar-brand text-white" href="#">
+                <i class="material-icons icon-size " >local_movies</i>
+                MOVIE CRUISER
+              </a>
+            <button type="button" class="navbar-toggler  btn btn-light" data-toggle="collapse" data-target="#myNavbars"
+            aria-controls="myNavbars" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse"  id="myNavbars">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="home.html" >
+                         Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="favorites.html">
+                       Favorites
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="available.html" >
+                     Available
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+    <!--search bar-->
+     <div class="container-fluid wrapper align-item-center" id="searchbox" >
+        <div class="search-wrapper input-group mb-1 mt-2" id="searchbarGrp">
+            <div class="input-group-prepend ">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="material-icons icon-size text-dark">search</i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search Movie" aria-label="search" aria-describedby="basic-addon1">
+       </div>
+     </div>
+<!--****************-->
+<div class="container-fluid wrapper flex-grow-1" id="bg">
+    <div class="card-row">
+        <div class="card-deck">
+            <!--card 1-->
+            <div class="card col-lg-3 col-sm-12 mt-1 mb-1" id="moviecard">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png"
+                     class="card-img-top" alt="La La Land" id="pic1">
+                     <div class="card-body">
+                         <h5 class="card-title text-white text-align-center">La La Land
+                          <span class="float-right">
+                            <small class="text-muted ">
+                             25/12/2016
+                              </small>
+                            </span>
+                         </h5>
+                        <div>
+                          <p class="text-white">Romantic Drama <span class="badge badge-success float-right " > Active </span> </p>
+                            <small class="text-white">Box Office :  $449.3 million<span class="float-right">English</span></small>
+                        </div>
+                        <a href="#" class="text-white"><del>Teaser</del></a>
+                     </div>
+                     <div id="msg1" class="p-2 mt-1 message">
+                      <p id="message-text">Added to Favorites</p></div>
+                     <div class="float-right">
+                        <a href="#" onclick="document.getElementById('msg1').style.display='block';" class="btn btn-danger mt-2 " id="favButton">
+                        Add To Favorites</a>
+                      
+                      </div>
+            </div>
+            <!--card 2-->
+            <div class="card col-lg-3 col-sm-12 mt-1 mb-1" id="moviecard">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/68/Seven_%28movie%29_poster.jpg"
+                     class="card-img-top" alt="s7" id="pic1">
+                     <div class="card-body">
+                      <h5 class="card-title text-white text-align-center">Seven
+                        <span class="float-right">
+                          <small class="text-muted ">
+                           15/09/1995
+                            </small>
+                          </span>
+                       </h5>
+                      <div>
+                        <p class="text-white">Thriller <span class="badge badge-success float-right " > Active </span> </p>
+                          <small class="text-white">Box Office :  $327.3 million<span class="float-right">English</span></small>
+                      </div>
+                      <a href="https://www.youtube.com/watch?v=znmZoVkCjpI" class="text-white">Teaser<small>( click here ) </small></a>
+                    </div>
+                      <div id="msg2" class="p-2 mt-1 message">
+                        <p id="message-text">Added to Favorites</p></div>
+                       <div class="float-right">
+                          <a href="#" onclick="document.getElementById('msg2').style.display='block';" class="btn btn-danger mt-2 " id="favButton">
+                          Add To Favorites</a>
+                       </div>
+                       
+              </div>
+            <!--card 3-->
+            <div class="card col-lg-3 col-sm-12 mt-1 mb-1" id="moviecard">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/Tag_%282018_film%29.png"
+                     class="card-img-top" alt="tag" id="pic1">
+                     <div class="card-body">
+                      <h5 class="card-title text-white text-align-center">Tag
+                        <span class="float-right">
+                          <small class="text-muted ">
+                           29/06/2018
+                            </small>
+                          </span>
+                       </h5>
+                      <div>
+                        <p class="text-white">Comedy <span class="badge badge-danger float-right " > Inactive </span> </p>
+                          <small class="text-white">Box Office :  $78.1 million<span class="float-right">English</span></small>
+                      </div>
+                      <a href="#" class="text-white"><del>Teaser</del></a>
+                   </div>
+                   <div id="msg3" class="p-2 mt-1 message">
+                    <p id="message-text">Added to Favorites</p></div>
+                   <div class="float-right">
+                      <a href="#" onclick="document.getElementById('msg3').style.display='block';" class="btn btn-danger mt-2 " id="favButton">
+                      Add To Favorites</a>
+                    
+                    </div>
+          </div>
+            <!--card 4-->
+            <div class="card col-lg-3 col-sm-12 mt-1 mb-1" id="moviecard">
+                <img src="https://upload.wikimedia.org/wikipedia/en/1/14/Tenet_movie_poster.jpg"
+                     class="card-img-top" alt="Tenet" id="pic1">
+                     <div class="card-body">
+                      <h5 class="card-title text-white text-align-center">Tenet
+                        <span class="float-right">
+                          <small class="text-muted ">
+                           4/12/2020
+                            </small>
+                          </span>
+                       </h5>
+                      <div>
+                        <p class="text-white">Science Fiction<span class="badge badge-danger float-right " > Inactive </span> </p>
+                          <small class="text-white">Box Office : $363.1 million<span class="float-right">English</span></small>
+                      </div>
+                      <a href="#" class="text-white"><del>Teaser</del></a>
+                   </div>
+                   <div id="msg4" class="p-2 mt-1 message">
+                    <p id="message-text">Added to Favorites</p></div>
+                   <div class="float-right">
+                      <a href="#" onclick="document.getElementById('msg4').style.display='block';" class="btn btn-danger mt-2 " id="favButton">
+                      Add To Favorites</a>
+                    
+                    </div>
+          </div>
+        </div><!--card deck-->
+    </div><!--row1-->
+    <div class="card-row">
+      <div class="card-deck">
+        <!--card 5-->
+        <div class="card col-lg-3 col-sm-12 mt-1 mb-1" id="moviecard">
+          <img src="https://upload.wikimedia.org/wikipedia/en/8/89/Extraction_%282020_film%29.png"
+               class="card-img-top" alt="Extraction" id="pic1">
+               <div class="card-body">
+                <h5 class="card-title text-white text-align-center">Extraction
+                  <span class="float-right">
+                    <small class="text-muted ">
+                     24/04/2020
+                      </small>
+                    </span>
+                 </h5>
+                <div>
+                  <p class="text-white">Action Drama<span class="badge badge-success float-right " > active </span> </p>
+                    <small class="text-white">Box Office :  $65 million<span class="float-right">English</span></small>
+                </div>
+                <a href="https://www.youtube.com/watch?v=L6P3nI6VnlY" class="text-white">Teaser<small>( click here ) </small></a>
+             </div>
+             <div id="msg5" class="p-2 mt-1 message">
+              <p id="message-text">Added to Favorites</p></div>
+             <div class="float-right">
+                <a href="#" onclick="document.getElementById('msg5').style.display='block';" class="btn btn-danger mt-2 " id="favButton">
+                Add To Favorites</a>          
+              </div>
+    </div>
+      <!--card-6-->
+      <div class="card col-lg-3 col-sm-12 mt-1 mb-1" id="moviecard">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/Five_Feet_Apart_%282019_poster%29.png"
+             class="card-img-top" alt="FFA" id="pic1">
+             <div class="card-body">
+              <h5 class="card-title text-white text-align-center">Five Feet Apart
+                <span class="float-right">
+                  <small class="text-muted ">
+                   15/03/2019
+                    </small>
+                  </span>
+               </h5>
+              <div>
+                <p class="text-white">Romantic Drama <span class="badge badge-success float-right " > active </span> </p>
+                  <small class="text-white">Box Office :  $91.5 million<span class="float-right">English</span></small>
+              </div>
+              <a href="https://www.youtube.com/watch?v=Kwg07npuJhw" class="text-white">Teaser<small>( click here ) </small></a>
+           </div>
+           <div id="msg6" class="p-2 mt-1 message">
+            <p id="message-text">Added to Favorites</p></div>
+           <div class="float-right">
+              <a href="#" onclick="document.getElementById('msg6').style.display='block';" class="btn btn-danger mt-2 " id="favButton">
+              Add To Favorites</a>
+            
+            </div>
+  </div>
+
+      </div>
+    </div>
+    <br/>
+</div>
+    
+ <!-- Copyright -->
+ <footer class="text-white text-lg-start container-fluid fixed-bottom">Copyright 2019</footer>
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</body>
+</html>
